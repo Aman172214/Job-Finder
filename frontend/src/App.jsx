@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import NavBar from './components/NavBar';
 
-const App = () => {
+
+
+
+function App() {
   return (
-    <div>App</div>
-  )
+    <div >
+      <NavBar />
+      <Outlet />
+    </div>
+  );
 }
 
 export default App
